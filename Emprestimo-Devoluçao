@@ -1,0 +1,101 @@
+programa {
+	
+	inclua biblioteca Calendario --> calen
+	inteiro entrada_mes, somaa, entrada_data, soma, somaMes, dev_mes=0, dev_data=0
+	cadeia  relatorio, aluno
+	
+		inteiro hora_atual, entrada_h, entrada_m, entrada_s, dev_h, dev_m, dev_s, minuto_atual, segundo_atual,
+	     prazo_entrega=7, aux, entrega
+	funcao inicio (){
+
+
+
+		
+
+		
+		
+		escreva ("Emprestimo ou Devoluçao (E/D)? ")
+		leia (relatorio)
+		limpa()
+		se (relatorio == "E" ou relatorio == "e") {
+		escreva ("Insira o nome do aluno: ")
+		leia (aluno)
+		limpa()
+		entrada_h = calen.hora_atual(falso)
+		entrada_m = calen.minuto_atual()
+		entrada_s = calen.segundo_atual()
+		entrada_data = calen.dia_mes_atual()
+		entrada_mes = calen.mes_atual()
+		escreva ("-----------------------\n")
+		escreva (aluno, " ENTRADA ", entrada_h,":", entrada_m,":", entrada_s, " DATA: " , entrada_data , "/" , entrada_mes)
+		escreva ("\n-----------------------\n")
+
+		entregaLivro ()
+		devolucao()
+	
+		}
+		senao se (relatorio == "D" ou relatorio == "d"){
+		
+	      
+	      devolucao()
+		}
+		
+		senao {
+			escreva ("Opção Inválida!")
+			
+		}
+
+ 	
+ 		}
+		
+		funcao entregaLivro(){
+
+			soma = entrada_data + 15
+
+			se (soma > 30){
+				somaa = soma-30
+				somaMes = entrada_mes+1
+				escreva("O prazo de entrega é até " , somaa,  "/", somaMes)
+
+				
+
+				
+			}
+
+				
+		}
+
+		funcao atraso(){ 
+
+			se (dev_data >= somaa e dev_mes >= somaMes){
+				escreva("Entrega fora do prazo") }
+
+				senao {
+					escreva("Entrega dentro do prazo")
+				}
+				}
+		funcao devolucao(){
+		escreva ("\nInsira o nome do aluno: ")
+		leia (aluno)
+		limpa()
+		dev_h = calen.hora_atual(falso)
+		dev_m = calen.minuto_atual()
+		dev_s = calen.segundo_atual()
+		dev_data = calen.dia_mes_atual()
+		dev_mes = calen.mes_atual()
+		escreva ("-----------------------\n")
+		escreva (aluno, " DEVOLUÇAO ", dev_h,":", dev_m,":", dev_s , " DATA: ", dev_data , "/" , dev_mes)
+		escreva ("\n-----------------------\n")
+	      
+	      
+	      atraso()
+					
+		}
+
+				
+			
+			
+			
+			 	
+		}
+	
