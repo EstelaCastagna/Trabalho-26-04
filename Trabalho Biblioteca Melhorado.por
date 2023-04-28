@@ -1,6 +1,7 @@
 programa
 {
-	 inclua biblioteca Util --> u
+	
+ inclua biblioteca Util --> u
 	inclua biblioteca Calendario --> calen
 
 //VARIÁVEIS E MATRIZES GLOBAIS
@@ -77,19 +78,19 @@ programa
 	{
 		inteiro menu, r_menu
 	
-		escreva("\tBIBLIOTECA\t\n")
-		escreva("----------------------------\n")
-		escreva("1- Cadastro\n")
-		escreva("2- Login\n")
-		escreva("3- Empréstimo\n")
-		escreva("4- Devolução\n")
-		escreva("5- Relatórios\n")
-		escreva("6- Pesquisa\n")
-		escreva("7- Catálogo\n")
-		escreva("8- Cadastro de livro\n")
-		escreva("9- Sair\n")
-		escreva("----------------------------\n")
-		escreva("Digite a opção desejada: ")
+		escreva("         BIBLIOTECA         \n")
+		escreva("____________________________\n\n")
+		escreva("1- Cadastro                 \n")
+		escreva("2- Login                    \n")
+		escreva("3- Empréstimo               \n")
+		escreva("4- Devolução                \n")
+		escreva("5- Relatórios               \n")
+		escreva("6- Pesquisa                 \n")
+		escreva("7- Catálogo                 \n")
+		escreva("8- Cadastro de livro        \n")
+		escreva("9- Sair                     \n")
+		escreva("____________________________\n")
+		escreva("\nDigite a opção desejada: ")
 		leia(menu)
 		limpa()
 
@@ -907,6 +908,8 @@ funcao pesquisa() {
 
 	
 }
+
+
 
 
 /* $$$ Portugol Studio $$$ 
